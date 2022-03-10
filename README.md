@@ -233,7 +233,3 @@ The documentation can be found [https://sinkaroid.github.io/pururin](https://sin
     }
 ]
 ```
-
-## Legal
-
-This tool can be freely copied, modified, altered, distributed without any attribution whatsoever. However, if you feel like this tool deserves an attribution, mention it.
