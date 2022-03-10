@@ -1,17 +1,36 @@
 # Pururin
-[![Testing](https://github.com/sinkaroid/pururin/actions/workflows/test.yml/badge.svg?branch=master)](https://github.com/sinkaroid/pururin/actions/workflows/test.yml)   
+[![Testing](https://github.com/sinkaroid/pururin/actions/workflows/test.yml/badge.svg?branch=master)](https://github.com/sinkaroid/pururin/actions/workflows/test.yml) [![Maintainability](https://api.codeclimate.com/v1/badges/3f12d56ab080f22e4495/maintainability)](https://codeclimate.com/github/sinkaroid/pururin/maintainability)  
+
 Pururin unofficial API wrapper  
 The official pururin is not providing any API and uses javascript, scrape strategy is not really helps
 
 ## Features
 
 - Covers the most paths
-- Fully documented and tested.
+- Fully documented and tested
 - Fancy featureful
+- Minimal dependencies
 
 ## Installation
 
 `pip install pururin`
+
+## Example
+
+```py
+import asyncio
+import pururin
+
+async def get():
+    doujin = pururin.Client()
+    data = doujin.get_book(61119)
+    print(data)
+
+async def main():
+    await asyncio.gather(get())
+
+asyncio.run(main())
+```
 
 ## Documentation
 The documentation can be found [https://sinkaroid.github.io/pururin](https://sinkaroid.github.io/pururin)
@@ -43,22 +62,6 @@ The documentation can be found [https://sinkaroid.github.io/pururin](https://sin
 - ### search_by_title(options)
     - Returns list of doujinshi based on title sort
 
-## Quick example
-
-```py
-import asyncio
-import pururin
-
-async def get():
-    doujin = pururin.Client()
-    data = doujin.get_book(61119)
-    print(data)
-
-async def main():
-    await asyncio.gather(get())
-
-asyncio.run(main())
-```
 
 ## Results
 `get` method will represent as **Book Object**
