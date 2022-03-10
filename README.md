@@ -49,15 +49,15 @@ The documentation can be found [https://sinkaroid.github.io/pururin](https://sin
 import asyncio
 import pururin
 
-async def search():
+async def get():
     doujin = pururin.Client()
     data = doujin.get_book(61119)
     print(data)
 
-async def get():
-    await asyncio.gather(search())
+async def main():
+    await asyncio.gather(get())
 
-asyncio.run(get())
+asyncio.run(main())
 ```
 
 ## Results
