@@ -26,7 +26,7 @@ setup(
     name='pururin',
     author='sinkaroid',
     author_email='anakmancasan@gmail.com',
-    version='0.0.3',
+    version='0.0.4',
     long_description=readme,
     url='https://github.com/sinkaroid/pururin',
     packages=['pururin'],

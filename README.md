@@ -1,5 +1,5 @@
 # Pururin
-[![Testing](https://github.com/sinkaroid/pururin/actions/workflows/test.yml/badge.svg)](https://github.com/sinkaroid/pururin/actions/workflows/test.yml)   
+[![Testing](https://github.com/sinkaroid/pururin/actions/workflows/test.yml/badge.svg?branch=master)](https://github.com/sinkaroid/pururin/actions/workflows/test.yml)   
 Pururin unofficial API wrapper  
 The official pururin is not providing any API and uses javascript, scrape strategy is not really helps
 
