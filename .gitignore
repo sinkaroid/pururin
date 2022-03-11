@@ -103,7 +103,8 @@ venv.bak/
 # mypy
 .mypy_cache/
 
-# minor
+# test project
 app.py
 setup.cfg
 .idea
+.gitchangelog.rc
