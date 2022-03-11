@@ -23,7 +23,7 @@ class Client(object):
 
     @staticmethod
     def auto_space(string):
-        """Automatically adds spaces between words
+        """Automatically adds spaces for GET requests
 
         Parameters
         ----------
@@ -50,7 +50,7 @@ class Client(object):
         self.specs = {'api_key': self.api_key}
 
     def get_book(self, book: int):
-        """Gets doujin on pururin by id number.
+        """Get doujin API from Id
 
         path: https://pururin.to/gallery/61119
 
@@ -67,7 +67,7 @@ class Client(object):
         Returns
         -------
         dict
-            The object that represents the specific id response.
+            The book object that represents the specific id response.
         """
 
         self.specs['g'] = book
@@ -102,7 +102,7 @@ class Client(object):
         Returns
         -------
         dict
-            The object that represents the doujin response.
+            The list object that represents the doujin response.
         """
 
         self.specs['query'] = query
@@ -137,7 +137,7 @@ class Client(object):
         Returns
         -------
         dict
-            The object that represents the doujin response.
+            The list object that represents the doujin response.
         """
 
         self.specs['query'] = query
@@ -172,7 +172,7 @@ class Client(object):
         Returns
         -------
         dict
-            The object that represents the doujin response.
+            The list object that represents the doujin response.
         """
 
         self.specs['query'] = query
@@ -207,7 +207,7 @@ class Client(object):
         Returns
         -------
         dict
-            The object that represents the doujin response.
+            The list object that represents the doujin response.
         """
 
         self.specs['query'] = query
@@ -242,7 +242,7 @@ class Client(object):
         Returns
         -------
         dict
-            The object that represents the doujin response.
+            The list object that represents the doujin response.
         """
 
         self.specs['query'] = query
@@ -277,7 +277,7 @@ class Client(object):
         Returns
         -------
         dict
-            The object that represents the doujin response.
+            The list object that represents the doujin response.
         """
 
         self.specs['query'] = query
@@ -300,7 +300,7 @@ class Client(object):
         Returns
         -------
         dict
-            The object that represents the doujin response.
+            The book object that represents the doujin response.
         """
         data = requests.get(BASE_URL + 'random' + '/', params=self.specs)
 
@@ -324,7 +324,7 @@ class Client(object):
         Returns
         -------
         dict
-            The object that represents the doujin response.
+            The book object that represents the doujin response.
         """
 
         self.specs['p'] = query
@@ -336,3 +336,4 @@ class Client(object):
             raise ValueError('No results found')
 
         return Client.better_object(data.json())
+
