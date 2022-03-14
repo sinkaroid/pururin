@@ -4,6 +4,9 @@
 Pururin unofficial API wrapper  
 The official pururin is not providing any API and uses javascript, scrape strategy is not really helps
 
+## Deprecated
+> It is not maintained anymore, pururin has been merged into [@sinkaroid/janda](https://github.com/sinkaroid/janda) / https://pypi.org/project/janda
+
 ## Features
 
 - Covers the most paths
