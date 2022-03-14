@@ -2,7 +2,6 @@ import re
 
 from setuptools import setup
 
-
 version = ''
 with open('pururin/__init__.py') as f:
     version = re.search(
@@ -26,7 +25,7 @@ setup(
     name='pururin',
     author='sinkaroid',
     author_email='anakmancasan@gmail.com',
-    version='0.0.7',
+    version=version,
     long_description=readme,
     url='https://github.com/sinkaroid/pururin',
     packages=['pururin'],
